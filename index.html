@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>The user-select property</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>The user-select property</h1>
+    <p><a href="https://github.com/russmaxdesign/user-select">Github Page</a></p>
+
+    <p>The <code>user-selection</code> property controls the how users are able
+    to select content within an element.</p>
+
+    <figure>
+      <figcaption class="markup-heading">CSS</figcaption>
+<pre><code class="language-css">.example {
+  user-select: none;
+  user-select: auto; /* initial value */
+  user-select: text;
+  user-select: contain;
+  user-select: all;
+}</code></pre>
+    </figure>
+    <hr>
+
+    <h2>Example 1 - default behaviour</h2>
+    <p>The default behavious will allow users to double-click to select parts of the content.</p>
+    <div class="example example1">
+      Double click this content: Lorem ipsum dolor sit amet.
+    </div>
+    <hr>
+
+    <h2>Example 2 - none</h2>
+    <p>Users cannot double-click to select any of the content. This option is useful
+    for interactive elements such as buttons.</p>
+    <div class="example example2">
+      Double click this content: Lorem ipsum dolor sit amet.
+    </div>
+    <figure>
+      <figcaption class="markup-heading">CSS</figcaption>
+<pre><code class="language-css">.example2 {
+  user-select: none;
+}
+</code></pre>
+    </figure>
+    <hr>
+
+    <h2>Example 3 - all</h2>
+    <p>Users click to select all sub-elements. This option is useful
+    for content areas where users may want to easily copy entire chunks of content.</p>
+    <div class="example example3">
+      <p>Click anwhere within this content: Lorem ipsum dolor sit amet.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+    </div>
+    <figure>
+      <figcaption class="markup-heading">CSS</figcaption>
+<pre><code class="language-css">.example2 {
+  user-select: all;
+}
+</code></pre>
+    </figure>
+    <hr>
+
+    <p style="margin-top: 2em;"><a href="https://github.com/russmaxdesign/user-select">Github Page</a></p>
+  </div>
+
+<script src="assets/js/prism.js"></script>
+</body>
+</html>
